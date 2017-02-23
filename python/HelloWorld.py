@@ -9,7 +9,6 @@ class BurpExtender(IBurpExtender):
     #
     
     def	registerExtenderCallbacks(self, callbacks):
-    
         # set our extension name
         callbacks.setExtensionName("Hello world extension")
         
@@ -28,4 +27,3 @@ class BurpExtender(IBurpExtender):
         
         # throw an exception that will appear in our error stream
         raise RuntimeException("Hello exception")
-        
